@@ -48,11 +48,13 @@ function removeTodo(id){
  return (
     <div className="App">
      
-        <Typography style={{
-          padding:16
+        <Typographystyle={{
+          padding:16,
+         position: "fixed",
+  top:0
         }
 
-        } variant="h1">React To Do</Typography>
+        }variant="h1">React To Do</Typography>
         <TodoForm addTodo={addTodo}/>
         
         <TodoList todos={todos} toggleComplete={toggleComplete} removeTodo={removeTodo}  />
